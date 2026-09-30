@@ -1,0 +1,26 @@
+{
+    "vim.leader": "<space>",
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "f", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "f", "g"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        {
+            "before": ["<leader>", "g", "d"],
+            "commands": ["editor.action.revealDefinition"]
+        },
+        {
+            "before": ["<leader>", "g", "r"],
+            "commands": ["editor.action.goToReferences"]
+        },
+        {
+            "before": ["<leader>", "r", "n"],
+            "commands": ["editor.action.rename"]
+        }
+    ]
+}

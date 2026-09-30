@@ -1,0 +1,21 @@
+[user]
+    name = Max Klabunde
+    email = maxklabunde@icloud.com
+
+[init]
+    defaultBranch = master
+
+[core]
+    editor = vim
+
+[diff]
+    tool = vimdiff
+
+[merge]
+    tool = vimdiff
+
+[difftool]
+    prompt = false
+
+[mergetool]
+    prompt = false
