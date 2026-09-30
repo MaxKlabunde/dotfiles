@@ -1,26 +1,26 @@
 {
     "vim.leader": "<space>",
 
+    "vim.handleKeys": {
+        "<C-h>": false,
+        "<C-j>": false,
+        "<C-k>": false,
+        "<C-l>": false
+    },
+
+    "vim.hlsearch": true,
+    "vim.searchHighlightColor": "#ffff0040",
+    "vim.searchMatchColor": "#ffff00",
+    "vim.searchMatchTextColor": "#000000",
+
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["<leader>", "f", "f"],
-            "commands": ["workbench.action.quickOpen"]
-        },
-        {
-            "before": ["<leader>", "f", "g"],
-            "commands": ["workbench.action.findInFiles"]
-        },
-        {
-            "before": ["<leader>", "g", "d"],
-            "commands": ["editor.action.revealDefinition"]
-        },
-        {
-            "before": ["<leader>", "g", "r"],
+            "before": ["g", "r"],
             "commands": ["editor.action.goToReferences"]
         },
         {
-            "before": ["<leader>", "r", "n"],
-            "commands": ["editor.action.rename"]
+            "before": ["K"],
+            "commands": ["editor.action.showHover"]
         }
     ]
 }
