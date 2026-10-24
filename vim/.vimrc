@@ -1,3 +1,5 @@
+syntax enable
+
 set hidden
 set number
 set numberwidth=2
