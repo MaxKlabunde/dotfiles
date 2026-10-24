@@ -2,7 +2,7 @@
     {
         "key": "ctrl+h",
         "command": "workbench.action.previousEditorInGroup",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+        "when": "(editorTextFocus && vim.active && vim.mode == 'Normal') || activeCustomEditorId"
     },
     {
         "key": "ctrl+j",
@@ -17,6 +17,6 @@
     {
         "key": "ctrl+l",
         "command": "workbench.action.nextEditorInGroup",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+        "when": "(editorTextFocus && vim.active && vim.mode == 'Normal') || activeCustomEditorId"
     }
 ]
