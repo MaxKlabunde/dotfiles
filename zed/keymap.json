@@ -1,0 +1,35 @@
+// Zed keymap, shared between macOS and Windows.
+//
+// "ctrl-" is the Control key on every OS (on macOS, Command is "cmd-"),
+// so these pane/terminal bindings use Control on the Mac as well.
+//
+// Docs: https://zed.dev/docs/key-bindings
+// All defaults: `zed: open default keymap` from the command palette.
+[
+	{
+		"context": "Editor && VimControl && !menu",
+		"bindings": {
+			"ctrl-h": "pane::ActivatePreviousItem",
+			"ctrl-l": "pane::ActivateNextItem",
+			"ctrl-j": "terminal_panel::ToggleFocus",
+			"g r": "editor::FindAllReferences",
+			"shift-k": "editor::Hover",
+			"g s": "git_panel::ToggleFocus",
+		},
+	},
+	{
+		"context": "ProjectPanel",
+		"bindings": {
+			"g s": "git_panel::ToggleFocus",
+		},
+	},
+	{
+		"context": "Terminal",
+		"bindings": {
+			"ctrl-k": "terminal_panel::ToggleFocus",
+			"ctrl-h": "pane::ActivatePreviousItem",
+			"ctrl-l": "pane::ActivateNextItem",
+			"ctrl-j": null,
+		},
+	},
+]

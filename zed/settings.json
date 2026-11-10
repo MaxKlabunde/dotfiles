@@ -1,0 +1,66 @@
+// Zed settings
+//
+// All defaults: `zed: open default settings` from the command palette.
+{
+	// Vim
+	"vim_mode": true,
+	"vim": {
+		"use_system_clipboard": "always",
+	},
+	"relative_line_numbers": "enabled",
+	"gutter": {
+		"line_numbers": true,
+	},
+
+	// Editing
+	"tab_size": 4,
+	"hard_tabs": true,
+	"soft_wrap": "editor_width",
+	"remove_trailing_whitespace_on_save": false,
+	"ensure_final_newline_on_save": false,
+
+	// UI
+	"diff_view_style": "split",
+	"project_panel": {
+		"dock": "right",
+		"git_status": true,
+	},
+	"ui_font_size": 16,
+	"buffer_font_size": 15,
+	"buffer_font_features": {
+		"calt": false,
+		"liga": false,
+	},
+	"theme": {
+		"mode": "system",
+		"light": "One Light",
+		"dark": "One Dark",
+	},
+
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false,
+		"anthropic_retention": false,
+	},
+
+	// AI off by default
+	"disable_ai": true,
+
+	// External agents, used once AI is on
+	"agent_servers": {
+		"claude-acp": {
+			"type": "registry",
+			"default_config_options": {
+				"mode": "auto",
+				"effort": "xhigh",
+			},
+		},
+		"codex-acp": {
+			"type": "registry",
+		},
+	},
+
+	// Platform overrides
+	"macos": {},
+	"windows": {},
+}

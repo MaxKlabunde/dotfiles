@@ -1,6 +1,7 @@
 syntax enable
 
 set hidden
+set relativenumber
 set number
 set numberwidth=2
 set virtualedit=block
